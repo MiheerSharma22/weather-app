@@ -1,5 +1,3 @@
-// LINE 50 TO 57 , 118-125
-
 const yourWeather = document.querySelector('.your_weather');
 const searchWeather = document.querySelector('.search_weather');
 const inputContainer = document.querySelector('.search_form_container');
