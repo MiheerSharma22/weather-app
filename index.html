@@ -7,10 +7,40 @@
     <title>Weather App</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        @media(max-width:520px) {
+            .search_form_container{
+                justify-content: center;
+                gap: 5px;
+            }
+            .search_form_container input{
+                width: 75%;
+            }
+            .search_form_container button {
+                width: 10%;
+            }
+        }
+
+        @media(max-width:460px) {
+            
+            .search_form_container button {
+                width: 15%;
+            }
+        }
+
+        @media(max-width:930px){
+            .windspeed , 
+            .humidity, 
+            .clouds{
+                width: 170px;
+            }
+        }
+
+    </style>
     
 </head>
 <body>
-    <div id="container" class="h-[100vh] w-[100vw] pt-[10px]">
+    <div id="container" class="min-h-[100vh] min-w-[100vw] pt-[10px]">
 
         <h1 class=" text-[1.9rem] text-center font-bold tracking-wider text-white uppercase">Weather App</h1>
 
@@ -61,7 +91,7 @@
             <p class="temperature text-[3rem] mb-[1rem] font-semibold"></p>
 
             <!-- weather conditions card container -->
-            <div class="conditions_card_container     flex justify-center items-center w-[90%] gap-[20px] text-white">
+            <div class="conditions_card_container p-[1rem] md:p-0 flex-col md:flex-row  flex justify-center items-center w-[90%] gap-[20px] text-white mb-[1rem]">
                 <!-- wind speed card -->
                 <div class="windspeed     bg-[#dbe2ef80] w-[22%] rounded-md flex flex-col justify-center items-center p-[0.5rem]">
                     <img src="./assets/wind.png" alt="" loading="lazy" class="windspeed_image" width="50" height="50">
